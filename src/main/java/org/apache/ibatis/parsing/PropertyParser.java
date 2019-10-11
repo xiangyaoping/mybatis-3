@@ -47,7 +47,7 @@ public class PropertyParser {
   private static final String DEFAULT_VALUE_SEPARATOR = ":";
 
   private PropertyParser() {
-    // Prevent Instantiation
+    // Prevent Instantiation  禁止构造 PropertyParser 对象，因为它是一个静态方法的工具类
   }
 
   public static String parse(String string, Properties variables) {
