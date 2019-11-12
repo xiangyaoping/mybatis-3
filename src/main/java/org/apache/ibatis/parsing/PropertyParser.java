@@ -56,6 +56,9 @@ public class PropertyParser {
     return parser.parse(string);
   }
 
+  /**
+   * 是 PropertyParser 的内部静态类
+   */
   private static class VariableTokenHandler implements TokenHandler {
     private final Properties variables;
     private final boolean enableDefaultValue;

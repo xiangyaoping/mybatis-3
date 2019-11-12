@@ -34,6 +34,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class AutoConstructorTest {
   private static SqlSessionFactory sqlSessionFactory;
 
+  /**
+   * 创建 SqlSessionFactory 对象，基于 mybatis-config.xml 配置文件。
+   * 初始化数据到内存数据库，基于 CreateDB.sql SQL 文件
+   * @throws Exception
+   */
   @BeforeAll
   static void setUp() throws Exception {
     // create a SqlSessionFactory

@@ -25,6 +25,7 @@
     <!-- autoMappingBehavior should be set in each test case -->
 
     <environments default="development">
+      <!--配置了事务管理和数据源，考虑到减少外部依赖，所以使用了HSQLDB-->
         <environment id="development">
             <transactionManager type="JDBC">
                 <property name="" value=""/>
@@ -37,6 +38,7 @@
         </environment>
     </environments>
 
+  <!--配置需要扫描的mapper文件-->
     <mappers>
         <mapper resource="org/apache/ibatis/autoconstructor/AutoConstructorMapper.xml"/>
     </mappers>
